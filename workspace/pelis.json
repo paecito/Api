@@ -1,0 +1,1 @@
+{"jsonrpc": "2.0", "id": 0, "result": {"movies": [{"rating": 6.199999809265137, "movieid": 17, "trailer": "plugin://plugin.video.youtube/?action=play_video&videoid=3H8bnKdf654", "label": "Transformers: El lado oscuro de la luna"}], "limits": {"start": 0, "total": 4, "end": 1}}}
