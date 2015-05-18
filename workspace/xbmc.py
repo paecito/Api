@@ -7,7 +7,6 @@ import io
 #Funcion para establecer la conexion con el centro multimedia XBMC
 def oauth_login(servidor):
     xbmc = XBMC("http://"+servidor+"/jsonrpc")
-    print "http://"+servidor+"/jsonrpc"
     return xbmc
 
 
