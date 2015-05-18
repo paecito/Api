@@ -15,8 +15,8 @@ def CreatePublicPost(blogger_service, blog_id, title, content):
 	return blogger_service.Post(entry, '/feeds/%s/posts/default' % blog_id)
 
 #Funcion para autenficarse en blogger
-def login_blog():
-    blogger_service = service.GDataService('sdkodiblog@gmail.com','blogkodisd')
+def login_blog(login,password):
+    blogger_service = service.GDataService(login,password)
     blogger_service.source = 'https://sdkodi-juang7.c9.io/'
     blogger_service.service = 'blogger'
     blogger_service.account_type = 'GOOGLE'
@@ -24,7 +24,3 @@ def login_blog():
     blogger_service.ProgrammaticLogin()
     return blogger_service
 
-#Metodo observador del id del blog
-def blog_id():    
-    blog_id = 5185572784043208024
-    return blog_id
